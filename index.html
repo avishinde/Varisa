@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Varisa</title>
+</head>
+<body>
+    <nav class="nav-bar">
+       <div class="left-nav-bar">
+         <div class="logo">
+            <img src="./images/logo1.svg">
+         </div>
+       </div>
+       <div class="right-nav-bar">
+         <ul class="right-nav-bar-left">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#services" >Services</a></li>
+            <li><a href="#works" >Works</a></li>
+            <li><a href="#about" >About</a></li>
+         </ul>
+         <div class="right-nav-bar-right">
+            <a href="#contact">
+            <div class="btn btn-dark">
+               <div class="btn-text btn-text-dark">
+                   Let’s talk
+               </div>
+               <img src="./images/right-arrow-white.svg" >
+            </div>
+            </a>
+         </div>
+       </div>
+    </nav>
+    <div class="mobile-nav-bar">
+    <nav class="nav-bar-mobile">
+      <img src="./images/logo-mobile.svg" style="width: 100px; height: 31px;"/>
+      <div class="hamburger">
+         <div class="line"></div>
+            <div class="line"></div>
+            <div class="s-line"></div>
+      </div>
+      <img src="./images/cross.svg" alt="Close" style="display: none; cursor: pointer; height: 20px; width: 20px;"/>
+    </nav>
+    <div  id="navList" style="display: none; background-color: #F4F3EF; position: absolute; top: 150px; left: 0; right: 0; padding: 20px; border: 1px solid #ccc; transition: top 0.3s ease-in-out;margin-top: 10px;">
+      <ul style="flex-direction: column;display: flex;list-style-type :none;font-family: RF Dewi Extended;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      color: #6B6B6B;
+      text-decoration: none;">
+         <li style="margin-bottom: 24px;"><a href="#home" >Home</a></li>
+         <li style="margin-bottom: 24px;"><a href="#services" >Services</a></li>
+         <li style="margin-bottom: 24px;"><a href="#works" >Works</a></li>
+         <li style="margin-bottom: 24px;"><a href="#about" >About</a></li>
+      </ul>
+      <div >
+         <a href="#contact">
+         <div class="btn btn-dark" style="width: 100%;">
+            <div class="btn-text btn-text-dark">
+                Let’s talk
+            </div>
+            <img src="./images/right-arrow-white.svg" >
+         </div>
+         </a>
+      </div>
+    </div>
+   </div>
+    <div class="home" id="home">
+      <div class="homeimage">
+         <img src="./images/homeimage.svg" />
+      </div>
+      <div class="mobile-home" >
+         <div style="display: flex;flex-direction: row;align-items: center;">
+            <div style="font-weight: 900;font-size: 48px; line-height: 58px;font-family: RFDewiCondensed Bold;">WE</div>
+            <img src="./images/Home-mobile-flower.svg" />
+            <div style="font-weight: 900;font-size: 48px; line-height: 58px;font-family: RFDewiCondensed Bold;">CRAFT</div>
+         </div>
+         <div style="font-weight: 400;font-size: 54px; line-height: 58px; font-family: FogtwoNo5;letter-spacing: 0.1em;flex-wrap: wrap;width: 331px;">USER DRIVEN</div>
+         <div style="font-weight: 900;font-size: 48px; line-height: 58px;font-family: RF Dewi Extended Bold;letter-spacing: -0.06em;"> PRODUCTS</div>
+      </div>
+      <div class="homeBottom-cta mobile-home-cta">
+         <div>
+            <div class="home-cta-disc">
+               We create user experience with logic,
+               design thinking and of course data...
+            </div>
+            <a href="#contact">
+            <div class="btn btn-light home-lets-talk-btn">
+               <div class="btn-text btn-text-light">
+                   Let’s talk
+               </div>
+               <img src="./images/Group 36944.svg" >
+           </div>
+         </a>
+         </div>
+         <div>
+            <a href="#works">
+            <div>
+               <img src="./images/casestudy-combine-desktop.svg" class="mobile-case-study"/>
+            </div>
+         </a>
+         </div>
+         <div class="home-no-of-prod">
+            <div style="margin-right: 53px;display: flex;flex-direction:column;align-items: center;">
+               <div style="margin-bottom: 18px;font-size: 42px; font-weight: 400; line-height: 24px; color: #212121;font-family: RF Dewi Extended Bold">100+</div>
+               <div style="font-size: 18px; font-weight: 400; line-height: 24px; color: #212121;text-align: center;font-family: RF Dewi Extended;">digital products<br>
+                  worked upon</div>
+            </div>
+            <div style="display: flex;flex-direction:column;align-items: center;" >
+               <div style="margin-bottom: 18px;font-size: 42px; font-weight: 400; line-height: 24px; color: #212121;font-family: RF Dewi Extended Bold">8+</div>
+               <div style="font-size: 18px; font-weight: 400; line-height: 24px; color: #212121; text-align: center;font-family: RF Dewi Extended">industry<br>
+                  experience</div>
+            </div>  
+         </div>
+      </div>
+    </div>
+    <!-- <div class="black-line" style="display: flex;flex-wrap: nowrap;align-items: center;justify-content: center;">
+      <div class="bullet-points-services" style="margin-right: 34px; width: 100%;">
+         <img src="./images/Union.svg"  />
+         <div class="black-linetext ">
+            User Experience Design 
+         </div>
+      </div>
+      <div class="bullet-points-services" style="margin-right: 34px;">
+         <img src="./images/Union.svg" />
+         <div class="black-linetext ">
+            Interaction Design 
+         </div>
+      </div>
+      <div class="bullet-points-services" style="margin-right: 34px;">
+         <img src="./images/Union.svg" />
+         <div class="black-linetext ">
+            User Research 
+         </div>
+      </div>
+      <div class="bullet-points-services" style="margin-right: 34px;">
+         <img src="./images/Union.svg" />
+         <div class="black-linetext ">
+            A/B Testing
+         </div>
+      </div>
+      <div class="bullet-points-services" style="margin-right: 34px;">
+         <img src="./images/Union.svg" />
+         <div class="black-linetext ">
+            Feature Design
+         </div>
+      </div>
+    </div> -->
+    <div class="black-line">
+      <div class="black-list-container" style="display: flex; align-items: center;">
+        <div class="bullet-points-services black-line-points-container" >
+          <img src="./images/Union.svg" />
+          <div class="black-linetext">
+            User Experience Design
+          </div>
+        </div>
+        <div class="bullet-points-services black-line-points-container" >
+          <img src="./images/Union.svg" />
+          <div class="black-linetext">
+            Interaction Design
+          </div>
+        </div>
+        <div class="bullet-points-services black-line-points-container" >
+          <img src="./images/Union.svg" />
+          <div class="black-linetext">
+            User Research
+          </div>
+        </div>
+        <div class="bullet-points-services black-line-points-container" >
+          <img src="./images/Union.svg" />
+          <div class="black-linetext">
+            A/B Testing
+          </div>
+        </div>
+        <div class="bullet-points-services black-line-points-container" >
+          <img src="./images/Union.svg" />
+          <div class="black-linetext">
+            Feature Design
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services-container" id="services">
+      <div>
+         <img src="./images/services.svg" class="services-image" />     
+      </div>
+      <div class="services-disc-container" >
+         <div class="ux-leadership-text1">UX <span class="ux-leadership-text2">Leader</span>ship</div>
+         <div class="services-synopsis">Think, Ask, Note, Streamline and Craft User-Centered  designs which not only is Viable but makes users smile :)</div>
+         <div class="services-discription">Always ready to push the boundaries especially when it comes to our
+            own platform. Our analytical eye to create a product that is visually
+            engaging and also optimised for maximum performance. It also perfectly 
+            reflects the journey to help it tell a story to increase its understanding
+            and drive actions. 
+         </div>
+         <div class="bullet-points-services-container">
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  User Research
+               </div>
+            </div>
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  User Experience design
+               </div>
+            </div>
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  Information Archutecture
+               </div>
+            </div>
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  Interaction Design
+               </div>
+            </div>
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  Usability Testing
+               </div>
+            </div>
+            <div class="bullet-points-services">
+               <img src="./images/Union.svg" style="margin-right: 12px;"/>
+               <div class="bullet-test">
+                  Implementation
+               </div>
+            </div>
+         </div>
+         <a href="#contact">
+         <div class="btn btn-light home-lets-talk-btn describe-pro-btn" >
+            <div class="btn-text btn-text-light">
+               Describe your product
+            </div>
+            <img src="./images/Group 36944.svg" >
+        </div>
+         </a>
+      </div>
+    </div>
+    <div class="process-container">
+      <div class="process-container-h1">
+         Process, which itself is a state of an art
+      </div>
+      <div class="process-container-h1 margin-to">Yes, <span class="process-container-h2">trust us</span>!</div>
+    <div class="process-card-container">
+    <!-- <div class="process-card-wrapper"> -->
+      <div class="process-card process-card-black">
+         <img src="./images/Home-mobile-flower.svg" class="process-card-black-flower">
+         <img src="./images/process-black-mask.svg" />
+      </div>
+      <div class="process-card">
+         <div class="process-no">
+            01
+         </div>
+         <div>
+            <div class="process-name">UX</div>
+            <div class="process-name-br process-name">Research</div>
+            <div class="process-discrption">Understanding your product’s
+               vision and thorough research
+               with potential user segment. </div>
+         </div>
+      </div>
+      <div class="process-card">
+         <div class="process-no">
+            02
+         </div>
+         <div>
+            <div class="process-name">Plan </div>
+            <div class="process-name-br process-name">& Sketch</div>
+            <div class="process-discrption">Learning from user insights to
+               plan and build foundational
+               user experience required.</div>
+         </div>
+      </div>
+      <div class="process-card">
+         <div class="process-no">
+            03
+         </div>
+         <div>
+            <div class="process-name">Pixel</div>
+            <div class="process-name-br process-name">Perfect</div>
+            <div class="process-discrption">Keeping all stakeholders on
+               same page, we craft HQ pixel
+               perfect interface.</div>
+         </div>
+      </div>
+      <div class="process-card" style="padding-bottom: 14px; height: 350px;">
+         <div class="process-no">
+            04
+         </div>
+         <div>
+            <div class="process-name">User</div>
+            <div class="process-name-br process-name">Testing</div>
+            <div class="process-discrption">Testing at 
+               every stage with
+               real users to reiterate and 
+               finally reaching the most viable
+               user experience required. 
+            </div>
+         </div>
+      </div>
+    <!-- </div> -->
+   </div>
+   </div>
+    <div class="case-study-container" id="works">
+      <div class="case-study-text-container">
+         <div class="case-study-h1">
+            Take a look at our past client’s
+happiness !~
+         </div>  
+         <a href="#contact">
+            <div class="btn btn-dark case-study-cta">
+               <div class="btn-text btn-text-dark " style="color: #F09744;">
+                  Let’s talk
+               </div>
+               <img src="./images/orange-arrow.svg" >
+            </div> 
+         </a>
+      </div>
+      <div class="case-study-text-container-mobile">
+         <div class="case-study-mobile-h1">
+            Our Client’s
+            happiness !~
+         </div>  
+      </div>
+      <div class="case-study-wrapper-desktop">
+         <div style="display: flex; flex-direction: row; justify-content: space-between;height: 516px;margin-bottom: 53px;">x
+            <div style="width: 40%;background-color: #CED074; border-radius: 80px;margin-right: 53px; display: flex; flex-direction: column; justify-content: center;padding-left: 47px;">
+               <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 500; font-size: 36px; line-height: 45px;margin-bottom: 14px;">The crazy case of</div>
+               <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 600; font-size: 48px; line-height: 58px;margin-bottom: 30px;">Combo Products
+                  buying UX</div>
+               <a href="https://uxfol.io/p/4ea9d380/02f6a791">
+               <div style="display: flex; background-color: #232323;border-radius: 20px; padding: 10px 30px 10px 30px; width: 335px;justify-content: center;">
+                  <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 18px; line-height: 22px;">Indian E-Commerce Industry</div>
+               </div>
+            </a>
+            </div>
+            <div class="container">
+               <div class="sub-rectangle"></div>
+               <div class="sub-rectangle2"></div>
+               <img src="./images/aloha-left.svg" alt="Aloha Left" style="left: 53px; top: 48px;">
+               <img src="./images/aloha-right.svg" alt="Aloha Right" style="left: 240px; top: 56px;">
+               <div class="text-row">
+                 <div style="color: #F975A5; font-family: RF Dewi Extended; font-weight: 600; font-size: 72px; line-height: 87px;margin-bottom: 8px;">Aloha</div>
+                 <a href="https://uxfol.io/p/4ea9d380/023d7b56">
+                 <div style="display: flex; background-color: #F975A5;border-radius: 20px; padding: 10px 0px 10px 0px; width: 215px;justify-content: center;">
+                  <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 14px; line-height: 22px;">Ai powered stay finder  </div>
+                   </div>
+                  </a>
+               </div>
+             </div>     
+         </div>
+         <div id="test" style="display: flex; flex-direction: row; justify-content: space-between;height: 516px;">
+            <div  style="width: 60%;background-color: #F3C09F; border-radius: 80px;margin-right: 53px;overflow: hidden;padding-right: 64px; flex-direction: row;display: flex;justify-content: space-between;padding-top: 41px; padding-left: 77px;">
+               <div style="display: flex;flex-direction: column; align-items: center; justify-content: center;">
+                  <img src="./images/myglam-logo.svg" />
+                  <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 600; font-size: 48px; line-height: 58px;margin-bottom: 23px;">Shade-Finder</div>
+                  <a href="https://uxfol.io/p/4ea9d380/024e9a6d">
+                  <div style="display: flex; background-color: #D18A5D;border-radius: 20px; padding: 10px 30px 10px 30px; width: 238px;justify-content: center;">
+                     <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 18px; line-height: 22px;">Feature Experience</div>
+                  </div> 
+                  </a>    
+               </div>
+               <img src="./images/myglam-ss.svg" />
+            </div>
+            <div style="width: 40%;background-color:#702EC3; border-radius: 80px;background-image: url('./images/cryptonite.svg'); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+               <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 600; font-size: 48px; line-height: 58px;margin-bottom: 23px;">Cryptonite</div>
+               <a href="https://uxfol.io/p/4ea9d380/0209b543" >
+               <div style="display: flex; background-color: #FFFFFF;border-radius: 20px; padding: 10px 30px 10px 30px; width: 308px;justify-content: center;">
+                  <div style="color: #702EC3; font-family: RF Dewi Extended; font-weight: 500; font-size: 18px; line-height: 22px;">Buy/Sell Crypto within taps</div>
+               </div>
+            </a>
+            </div>
+         </div>
+      </div>
+      <!-- Mobile case study container -->
+    <div class="case-study-wrapper-mobile">
+      <div style="margin-bottom: 14px;  height: 143px; background-color: #F3C09F; border-radius: 10px;overflow: hidden;padding-right: 26px; flex-direction: row;display: flex;justify-content: space-between;padding-top: 13px; padding-left: 32px;">
+         <div style="display: flex;flex-direction: column; align-items: center; justify-content: center;">
+            <img src="./images/myglam-logo.svg" style="width: 80px; height: 50px;" />
+            <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 600; font-size: 18px; line-height: 28px;margin-bottom: 10px;">Shade-Finder</div>
+            <a href="https://uxfol.io/p/4ea9d380/024e9a6d">
+                  <div style="display: flex; background-color: #D18A5D;border-radius: 20px;  justify-content: center;padding: 5px;">
+                     <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 10px; line-height: 10px;">Feature Experience</div>
+                  </div>     </a>  
+         </div>
+         <img src="./images/myglam-ss.svg" style="width: 87px; height: 182px;"/>
+      </div>
+      <div style="display: flex;flex-direction: row;justify-content: space-between;height: 143px;margin-bottom: 14px">
+         <div style="width: 45%;background-color: #CED074; border-radius: 10px;margin-right: 13px; display: flex; flex-direction: column; justify-content: center; align-items:flex-start; padding-left: 10px;">
+            <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 500; font-size: 12px; line-height: 14px;margin-bottom: 5px;">The crazy case of</div>
+               <div style="color: #232323; font-family: RF Dewi Extended; font-weight: 600; font-size: 14px; line-height: 20px;margin-bottom: 8px;">Combo Products
+                  buying UX</div>
+                  <a href="https://uxfol.io/p/4ea9d380/02f6a791">
+               <div style="display: flex; background-color: #232323;border-radius: 20px; padding: 5px;justify-content: center;">
+                  <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 8px; line-height: 10px;">Indian E-Commerce Industry</div>
+               </div>
+            </a>
+         </div>
+         <div style="width: 60%;background-color:#7F46C9; border-radius: 10px;display: flex;justify-content: center;flex-direction: column; align-items: center;">
+            <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 600; font-size: 20px; line-height: 22px;margin-bottom: 10px;">Cryptonite</div>
+            <a href="https://uxfol.io/p/4ea9d380/0209b543" >
+            <div style="display: flex; background-color: #FFFFFF;border-radius: 20px; padding: 5px; justify-content: center;width: 120px;">
+               <div style="color: #702EC3; font-family: RF Dewi Extended; font-weight: 500; font-size: 8px; line-height: 12px;">Buy/Sell Crypto within taps</div>
+            </div>
+         </a>
+         </div>
+      </div>
+      <div class="container">
+         <div class="sub-rectangle"></div>
+         <div class="sub-rectangle2"></div>
+         <img src="./images/aloha-left-m.svg" alt="Aloha Left" style="left: 20px; top: 13px;">
+         <img src="./images/aloha-right-m.svg" alt="Aloha Right" style="left: 70px; top: 14px;">
+         <div class="text-row">
+            <div style="color: #F975A5; font-family: RF Dewi Extended; font-weight: 600; font-size: 32px; line-height: 32px;margin-bottom: 8px;">Aloha</div>
+            <a href="https://uxfol.io/p/4ea9d380/023d7b56">
+            <div style="display: flex; background-color: #F975A5;border-radius: 20px; padding: 10px ; width: 120px;justify-content: center;">
+             <div style="color: #FFFFFF; font-family: RF Dewi Extended; font-weight: 500; font-size: 8px; line-height: 10px;">Ai powered stay finder  </div>
+            </div>
+         </a>
+         </div>  
+         </div>
+      </div>
+    
+    </div>
+    <div class="about-container" id="about">
+      <div class="about-desktop-h1" style="font-size: 48px; color: #181818;font-family: KonstantGrotesk; font-weight: 400;line-height: 69px;margin-bottom: 63px;"><span class="about-mobile-h1.1" style="font-family: RF Dewi Extended Bold; font-weight: 800;line-height: 57px;">About -</span> The Vrisa Studios</div> 
+      <div class="about-mobile-h1">The Vrisa Studios</div> 
+      <div class="about-description " style="color: #8E8E8E;text-align: center;font-family: RF Dewi Extended">At Vrisa Studios, we're a cult forming UX UI agency, crafting captivating interfaces that blend creativity with data-driven decisions. Our human-centered design approach ensures products that resonate with users.</div> 
+      <div class="talent-container">
+         <div style="width: 40%;display:flex; flex-direction: column; justify-content: center;border-right-color: #F09744;border-style: solid;" class="talent-box-border">
+            <div style="font-family: RF Dewi Expanded Bold; font-weight: 800; color: #181818;" class="text21">21+</div>
+            <div style="font-family: RF Dewi Extended ; font-weight: 700; color: #181818;" class="talent-text">Talents</div>
+         </div>
+         <div class="telent-right-con" style="width: 60%;display:flex; flex-direction: column; justify-content: center;">
+            <div class="talent-right-test1"><span class="talent-right-test2">User</span> Researchers</div>
+            <div class="talent-right-test1"><span class="talent-right-test2">UX/UI</span> Designers</div>
+            <div class="talent-right-test1">Data <span class="talent-right-test2">Scientists</span></div>
+         </div>
+      </div> 
+      <div class="out-of-box">
+         OUT OF
+            THE BOX
+      </div> 
+      </div> 
+      <div class="scrollable-container">
+            <div class="card-container">
+              <div class="card">
+                <img src="./images/aditya-rai.svg" alt="Aditya Rai" />
+                <div class="card-content">
+                  <div class="card-icon">“</div>
+                  <div class="testimonial">I thank the team at Vrisa to include my image on their website. Jokes aside, they helped me design my product based on social impact</div>
+                  <div class="author">
+                    <div class="name">Aditya Rai</div>
+                    <div class="title">Founder 20 under 20</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/raj-armani.svg" alt="Raj Armani" />
+                <div class="card-content">
+                  <div class="card-icon">“</div>
+                  <div class="testimonial">These guys are really amazing to
+                     work with. Such exceptional minds
+                     working under one roof is wild. </div>
+                  <div class="author">
+                    <div class="name">Raj Armani</div>
+                    <div class="title">MyGlamm Product Head</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/Nathan.png" alt="Aditya Rai"/>
+                <div class="card-content">
+                  <div class="card-icon">“</div>
+                  <div class="testimonial">Awesome team with mindblowing
+                     results. They never made me get lost
+                     throughout the process and delivered
+                     what i wanted. </div>
+                  <div class="author">
+                    <div class="name">Nathan M.</div>
+                    <div class="title">Founder of Aloha Tech.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+   </div>
+   </div>      
+   <div class="orange-line">
+      <div style="align-items: center;display: flex;flex-direction: column;">
+         <div class="numbers-text">8+</div>
+         <div class="name-text">Years</div>
+      </div>
+      <div style="align-items: center;display: flex;flex-direction: column;">
+         <div class="numbers-text">100+</div>
+         <div class="name-text">Products</div>
+      </div>
+      <div style="align-items: center;display: flex;flex-direction: column;">
+         <div class="numbers-text">21130+</div>
+         <div class="name-text">Coffee & Beers</div>
+      </div>
+   </div>
+   <div id="contact" class="contact-container" >
+      <div class="input-container" style="position: relative;overflow: hidden;">
+         <div class="input-container-h1">Get in touch</div>
+         <div  class="main-input">
+         <div class="name-email-container">
+               <div class="text-input-container text-input-container-email">
+                  <input type="text" id="name" class="text-input" placeholder="Your awesome name" />
+               </div>
+               <div class="text-input-container text-input-container-email">
+                  <input type="email" id="email1" class="text-input" placeholder="Your work email" />
+               </div>
+         </div>
+         <div  class="product-description">
+            <div class="text-input-container">
+               <input type="text" class="text-input" id="projectDescription" placeholder="Break the ice - tell us about your project" />
+            </div>
+         </div>
+         <div class="mobile-product-description">
+            <div style="margin-bottom:21px ;">
+               Tell us about your project
+            </div>
+            <textarea id="projectDescriptionMobile" style="width: 100%; height: 98px; border: #282828 1px solid;display: flex;align-self: start;background-color: transparent;
+               font-family: RF Dewi Extended; font-size: 16px; color: white;align-items: flex-start;resize: none;
+            "></textarea>
+            
+            
+         </div>
+         </div>
+         <div class="btn btn-dark case-study-cta" id="sendMessageButton">
+            <div class="btn-text btn-text-dark send-message" style="color: #F09744;">
+               Send Message
+            </div>
+            <img src="./images/orange-arrow.svg" >
+        </div> 
+        <div style="display: flex;margin-top: 119px;">
+            <div class="location">
+               <div class="address-container">
+                  <img src="./images/location-icon.svg" />
+                  <div class="address-text">San Jose, California<br>
+                     285321</div>
+               </div>
+               <div class="address-container">
+                  <img src="./images/mail-icon.svg" />
+                  <div class="address-text">hey@thevrisastudios.com</div>
+               </div>
+            </div>
+            <div class="mumbai-hide-mobile">
+               <div class="address-container">
+                  <img src="./images/location-icon.svg" />
+                  <div class="address-text">Mumbai, Maharashtra<br>
+                     400021</div>
+               </div>
+               <div class="address-container">
+                  <img src="./images/mail-icon.svg" />
+                  <div class="address-text">hey@thevrisastudios.com</div>
+               </div>
+            </div>
+        </div>
+        <div style="position: absolute;bottom: -174px;right: -109px;" class="mobile-flower">
+         <img src="./images/Bottom-flower.svg" />
+      </div>
+      </div>
+      <div class="bottam-bar">
+         <img src="./images/bottam-logo.svg" />
+         <div><span>All copyright reserved </span> @ TheVrisaStudios 2023</div>
+      </div>
+   </div>
+   <script>
+// const bulletPoints = document.querySelectorAll('.black-linetext');
+//   let currentIndex = 0;
+
+//   function cycleHighlights() {
+//     bulletPoints[currentIndex].classList.remove('highlighted');
+//     currentIndex = (currentIndex + 1) % bulletPoints.length;
+//     bulletPoints[currentIndex].classList.add('highlighted');
+    
+//     // Scroll the highlighted item into view within the container
+//     bulletPoints[currentIndex].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+//   }
+
+//   setInterval(cycleHighlights, 1500); // Change duration as needed
+// const bulletPoints = document.querySelectorAll('.black-linetext');
+// let currentIndex = 0;
+
+// function cycleHighlights() {
+//   bulletPoints[currentIndex].classList.remove('highlighted');
+//   currentIndex = (currentIndex + 1) % bulletPoints.length;
+//   bulletPoints[currentIndex].classList.add('highlighted');
+
+//   // Scroll only if the highlighted item is not fully visible
+//   const container = document.querySelector('.black-line');
+//   const containerRect = container.getBoundingClientRect();
+//   const itemRect = bulletPoints[currentIndex].getBoundingClientRect();
+
+//   if (itemRect.left < containerRect.left || itemRect.right > containerRect.right) {
+//     bulletPoints[currentIndex].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+//   }
+// }
+
+// setInterval(cycleHighlights, 1500); // Change duration as needed
+const container = document.querySelector('.black-line');
+const bulletPoints = document.querySelectorAll('.black-linetext');
+let currentIndex = 0;
+
+function cycleHighlights() {
+  bulletPoints[currentIndex].classList.remove('highlighted');
+  currentIndex = (currentIndex + 1) % bulletPoints.length;
+  bulletPoints[currentIndex].classList.add('highlighted');
+
+  const containerRect = container.getBoundingClientRect();
+  const itemRect = bulletPoints[currentIndex].getBoundingClientRect();
+
+  const scrollOffset = itemRect.left - containerRect.left - container.clientWidth / 2 + itemRect.width / 2;
+  container.scrollBy({ left: scrollOffset, behavior: 'smooth' });
+}
+
+setInterval(cycleHighlights, 1500); // Change duration as needed
+
+const hamburger = document.querySelector(".hamburger");
+  const cross = document.querySelector("img[src='./images/cross.svg']");
+  const navList = document.getElementById("navList");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.style.display = "none";
+    cross.style.display = "block";
+    navList.style.display = "block";
+    navList.style.top = "60px"; // Show the navigation list
+  });
+
+  cross.addEventListener("click", () => {
+    hamburger.style.display = "block";
+    cross.style.display = "none";
+    navList.style.top = "-100%"; // Hide the navigation list
+  });
+    </script>
+</body>
+</html>
